@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+*{font-family: Constantia; box-sizing: border-box;}
+body{color: black; background-color: whitesmoke; padding: 5%;}
+a{color: white;text-decoration: none;}
+.section-header{font-size: 5vh; text-align: center; background-color: #A2B8A0; padding: 1%; width: 100%}
+h2{font-size: 5vh;}
+p{font-size: 3.5vh;}
+
+#section0, #section2, #section3,  #section4{
+
+  position: relative;
+  margin-top: 10%;
 }
 
-.App-logo {
-  height: 40vmin;
+
+/* -------------------------------------------------- NAVBAR ------------------------------------------------------- */
+
+.navbar{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: whitesmoke;
+}
+
+.navbar ul li{
+  font-size: 3.5vh;
+  justify-content: center;
+  display: inline-block;
+  color: black;
+  text-align: left;
+  list-style-type: none;
+}
+
+.navbar-ul-a{
+  font-size: 3.5vh;
+  justify-content: center;
+  display: flex;
+  color: black;
+  text-align: left;
+  list-style-type: none;
+}
+
+.navbar-brand{
+  font-size: 5.5vh;
+  font-weight:600;
+  color: black;
+}
+
+.nav-link.disabled{
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-item{
+  list-style-type: none;
+  display: inline-block;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+/* ---------------------------------------------------- HOME PAGE ---------------------------------------------- */
+
+#section0 .row{
+  padding: 10%;
+}
+
+#section0 .col{
+  text-align: center;
+  background-color: #A2B8A0;
+  padding-top: 4%;
+  padding-bottom: 4%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ---------------------------------------------------- ABOUT US PAGE ---------------------------------------------- */
+#aboutuspic{
+  height: 300px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* ----------------------------------- SIGNUP PAGE ---------------------------------------------- */
+
+#section2 .row{
+  height: 30%;
+}
+
+#section2 .row.donor{
+
+  padding-top: 1%;
+}
+
+#section2 .col{
+  padding: 2%;
+  text-align: center;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+#section2 .row.donor .col{
+  background-color: #AADFDB;
+}
+
+#section2 .row.volunteer .col{
+  background-color: #587F97;
+}
+
+
+#section2 a{
+  text-decoration: none;
+}
+
+
+/* ----------------------------------- VOLUNTEER/RESTAURANT SIGN UP FORM ---------------------------------------------- */
+
+form h1{text-align: center;}
+
+#section3 .row{
+  display: flex;
+}
+
+#section3 .column1{
+  background: #A2B8A0;
+  padding: 4%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+#section3 .contact-info{
+  text-align: center;
+}
+
+#section3 img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 20%;
+}
+
+
+#section3 .column2{
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+#section3 .contact-form{
+  vertical-align: middle;
+}
+
+#section3 .contact-form label{
+  font-weight:600;
+  width:30%;
+  float:bottom;
+  padding: 6px;
+}
+
+#section3 .contact-form input{
+  width:60%;
+  float: left;
+  padding: 6px;
+}
+
+#section3 .contact-form button{
+  background: #284026;
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+}
+#section3 .contact-form button:focus{
+  box-shadow:none;
+}
+
+#section3 .form-group p{opacity: 0;}
+#section3 .form-control ~ p{opacity:0;}
+#section3 .form-group .invalid ~ p{
+  opacity: 1; color:
+        red; font-size: 3vh;
+}
+#section3 .form-check .invalid ~ p{
+  opacity: 1;
+  color: red;
+  font-size: 3vh;
 }
